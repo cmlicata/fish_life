@@ -187,7 +187,7 @@ CREATE TABLE IF NOT EXISTS `gels` (
   `gel_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `gel_number` varchar(128) DEFAULT NULL,
   `gel_url` varchar(200) DEFAULT NULL,
-  `spec_id` int(11) unsigned DEFAULT NULL,
+  `extraction_id` int(11) unsigned DEFAULT NULL,
   PRIMARY KEY (`gel_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -196,8 +196,8 @@ CREATE TABLE IF NOT EXISTS `temp_gels_insert` (
   `gel_id` int(11) unsigned DEFAULT NULL,
   `gel_number` varchar(128) DEFAULT NULL,
   `gel_url` varchar(200) DEFAULT NULL,
-  `spec_id` int(11) unsigned DEFAULT NULL,
-  `name` varchar(128) DEFAULT NULL
+  `extraction_id` int(11) unsigned DEFAULT NULL,
+  `dna_extraction_label` varchar(128) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- sequence table
