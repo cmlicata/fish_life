@@ -1,0 +1,41 @@
+gallery_id,spec_id,name,catalog_nums,observations,photo_path,num_fish,photo_dir
+,,Acanthocybium solandri,UNISANTA NA,,Makaira/public/fishphoto,1,PhotoFolder00109
+,,Achirus achirus,USNM 66121,,Makaira/public/fishphoto,12,PhotoFolder00004
+,,Achirus lineatus,"USNM 332472, 393816, 286841, 184238, 156419, 300531",,Makaira/public/fishphoto,10,PhotoFolder00003
+,,Alectis ciliaris,"USNM 382297, 7983, 38056, 75928, 435564, FNHM NA",,Makaira/public/fishphoto,7,PhotoFolder00025
+,,Aseraggodes heemstrai,USNM 391589,,Makaira/public/fishphoto,6,PhotoFolder00356
+,,Aseraggodes kobensis,"USNM 286826, 077193, 071464",,Makaira/public/fishphoto,4,PhotoFolder00337
+,,Asterorhombus cocosensis,USNM 371446,,Makaira/public/fishphoto,1,PhotoFolder00242
+,,Atule mate,"USNM 190027, 314059, 362711, 307614, 325271, 148070",,Makaira/public/fishphoto,10,PhotoFolder00039
+,,Aulostomus maculatus,FNHM NA,,Makaira/public/fishphoto,1,PhotoFolder00091
+,,Auxis thazard,UNISANTA NA,,Makaira/public/fishphoto,2,PhotoFolder00154
+,,Bothus constellatus,"USNM 041252, 321707, 126023, 375786",,Makaira/public/fishphoto,10,PhotoFolder00287
+,,Bothus mancus,"USNM 391218, 391995, 318330, 282608, 282601, 141782, 282609",,Makaira/public/fishphoto,10,PhotoFolder00233
+,,Bothus ocellatus,"UNISANTA NA,USNM 416464, 282643, 158319, 092062",,Makaira/public/fishphoto,11,PhotoFolder00153
+,,Bothus pantherinus,"USNM 392523, 282668, 412301",,Makaira/public/fishphoto,10,PhotoFolder00197
+,,Bothus robinsi,"UNISANTA NA, USNM 282731, 282727",,Makaira/public/fishphoto,12,PhotoFolder00146
+,,Brama brama,"USNM 394050, 240541, 240545, 240544, 240543",,Makaira/public/fishphoto,5,PhotoFolder00076
+,,Carangoides orthogrammus,"USNM 218569, 381946, FNHM NA",,Makaira/public/fishphoto,9,PhotoFolder00079
+,,Centropomus armatus,"USNM 128733, 332829",,Makaira/public/fishphoto,8,PhotoFolder00177
+,,Centropomus ensiferus,"USNM 080131, 332841, 121727",,Makaira/public/fishphoto,10,PhotoFolder00185
+,,Centropomus medius,"USNM 080186, 128737, 080181, 128739, 128738",,Makaira/public/fishphoto,10,PhotoFolder00173
+,,Citharichthys spilopterus,"USNM 300514, 357200, 155849",,Makaira/public/fishphoto,10,PhotoFolder00401
+,,Coryphaena hippurus,FNHM NA,,Makaira/public/fishphoto,2,PhotoFolder00088
+,,Echeneis naucrates,FNHM NA,,Makaira/public/fishphoto,2,PhotoFolder00089
+,,Gymnachirus melas,"USNM 291106, 291105, 291088",,Makaira/public/fishphoto,10,PhotoFolder00013
+,,Gymnachirus texae,"USNM 286949, 159554, 185090, 286951, 158303, 358229",,Makaira/public/fishphoto,9,PhotoFolder00009
+,,Hippocampus erectus,UNISANTA NA,,Makaira/public/fishphoto,1,PhotoFolder00144
+,,Lepidopsetta bilineata,USNM 70806,,Makaira/public/fishphoto,4,PhotoFolder00404
+,,Peprilus paru,UNISANTA NA,,Makaira/public/fishphoto,1,PhotoFolder00107
+,,Polydactylus approximans,"USNM 368803, 369212, 369527, 375135, 65621, 46488",,Makaira/public/fishphoto,10,PhotoFolder00186
+,,Polydactylus oligodon,"USNM 314461, 365628",,Makaira/public/fishphoto,10,PhotoFolder00212
+,,Polydactylus opercularis,"USNM 368530, 368677, 181262, 181258",,Makaira/public/fishphoto,7,PhotoFolder00207
+,,Polydactylus virginicus,"USNM 185186, 349227, 41324",,Makaira/public/fishphoto,10,PhotoFolder00213
+,,Pterycombus brama,"USNM 240571, 240569. 395262, 240570",,Makaira/public/fishphoto,4,PhotoFolder00053
+,,Scophthalmus aquosus,"USNM 091255, 091254, 118218",,Makaira/public/fishphoto,6,PhotoFolder00395
+,,Seriola zonata,"FNHM NA, USNM 433136, 433183, 392778, 433206, 49605, 106292, 93929",,Makaira/public/fishphoto,11,PhotoFolder00103
+,,Sphyraena barracuda,"USNM 148648, 1486449, 400422, 189902",,Makaira/public/fishphoto,10,PhotoFolder00236
+,,Sphyraena borealis,"USNM 410819, 73494, 050581",,Makaira/public/fishphoto,10,PhotoFolder00238
+,,Symphurus civitatium,"USNM 354371, 353999, 354380",,Makaira/public/fishphoto,10,PhotoFolder00273
+,,Symphurus diomedeanus,"USNM 391970, 157692, 158306, 402740, 358220",,Makaira/public/fishphoto,10,PhotoFolder00268
+,,Symphurus plagiusa,"USNM 396359, 065346, 340444",,Makaira/public/fishphoto,10,PhotoFolder00289
