@@ -178,7 +178,7 @@ CREATE TABLE IF NOT EXISTS `extraction_plate` (
 CREATE TABLE IF NOT EXISTS`splate` (
   `splate_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `splate_name` varchar(120) DEFAULT NULL,
-  `shp_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `shp_date` timestamp DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`splate_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

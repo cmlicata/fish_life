@@ -69,7 +69,7 @@ And that is it! You are now completely set up with [Sequelpro](https://sequelpro
        - ![sequelpro import csv mapping example part 1](images/import_species_file_csv_mapping_p1.png)
 
 
-   - Now, configure your CSV mapping (i.e. which fields/columns you would like to import and which ones you would rather not).
+   - Now, configure your CSV mapping (i.e. which fields/columns you would like to import and which ones you would rather not).  **NOTE: Unlike the rest of the tables, this insert template does not contain a column for `spec_id`, therefore, [sequelpro](https://sequelpro.com) will automatically set and increment the [primary key](https://www.w3schools.com/sql/sql_primarykey.asp) `spec_id`**
 
        - ![sequelpro import csv mapping example part 2](images/import_species_file_csv_mapping_p2.png)
 
@@ -97,7 +97,7 @@ And that is it! You are now completely set up with [Sequelpro](https://sequelpro
       - ![sequelpro import collections csv mapping example part 1](images/import_collections_file_csv_mapping_p1.png)
 
 
-  - Now, because you do not want to set the `AUTO INCREMENTING` [primary key](https://www.w3schools.com/sql/sql_primarykey.asp) of `collection_id` to be set to `NULL`, upon import, you need to ignore the `collection_id` field that exists in the insert template by navigating to `1. collection_id >> Ignore Field`
+  - Now, because you do not want to set the [foreign key](https://www.w3schools.com/sql/sql_foreignkey.asp) of `collection_id` to be set to `NULL`, upon import, you need to ignore the `collection_id` field that exists in the insert template by navigating to `1. collection_id >> Ignore Field`
 
       - ![sequelpro import collections csv mapping example part 2](images/import_collections_file_csv_mapping_p2.png)
 
@@ -130,12 +130,12 @@ And that is it! You are now completely set up with [Sequelpro](https://sequelpro
       - ![sequelpro import temp_gallery_insert csv mapping example part 1](images/import_gallery_file_csv_mapping_p1.png)
 
 
-  - Now, because you do not want to set the [primary key](https://www.w3schools.com/sql/sql_primarykey.asp) of `gallery_id` to be set to `NULL`, upon import, you need to ignore the `gallery_id` field that exists in the insert template by navigating to `1. gallery_id >> Ignore Field`
+  - Now, because this is a temporary table you do not need to import the [primary key](https://www.w3schools.com/sql/sql_primarykey.asp) of `gallery_id`. Upon import, you need to ignore the `gallery_id` field that exists in the insert template by navigating to `1. gallery_id >> Ignore Field`
 
       - ![sequelpro import temp_gallery_insert csv mapping example part 2](images/import_gallery_file_csv_mapping_p2.png)
 
 
-  - Again, because you do not want to set the [foreign key](https://en.wikipedia.org/wiki/Foreign_key) of `spec_id` to be set to `NULL`, you need to ignore the `spec_id` field that exists in the insert template by navigating to `2. spec_id >> Ignore Field`
+  - Again, because this is a temporary table you do not need to import the [foreign key](https://www.w3schools.com/sql/sql_foreignkey.asp) of `spec_id`. Upon import, you need to ignore the `spec_id` field that exists in the insert template by navigating to `2. spec_id >> Ignore Field`
 
       - ![sequelpro import temp_gallery_insert csv mapping example part 3](images/import_gallery_file_csv_mapping_p3.png)
 
@@ -225,6 +225,7 @@ And that is it! You are now completely set up with [Sequelpro](https://sequelpro
 
 
   - Click the down-arrow next to `"Run Selection"`, which is immediately below the textbox area, to the right, and click `"Run All Queries"`.
+
       - ![sequelpro run all queries example](images/sequelpro_run_update_gallery_info_in_species_table_example.png)
 
 
@@ -235,7 +236,7 @@ And that is it! You are now completely set up with [Sequelpro](https://sequelpro
     - ![sequelpro post insert of correctly updated gallery table data into species table](images/post_update_species_table.png)
 
 
-### Insert data into the temp_tissues_insert table
+### Insert data into the `temp_tissues_insert` table
 
   - First, open [sequelpro](https://sequelpro.com).
 
@@ -251,17 +252,17 @@ And that is it! You are now completely set up with [Sequelpro](https://sequelpro
       - ![sequelpro import temp_tissues_insert csv mapping example part 1](images/import_tissues_file_csv_mapping_p1.png)
 
 
-  - Now, because you do not want to set the [primary key](https://www.w3schools.com/sql/sql_primarykey.asp) of `tissue_id` to be set to `NULL`, upon import, you need to ignore the `tissue_id` field that exists in the insert template by navigating to `1. tissue_id >> Ignore Field`
+  - Now, because this is a temporary table you do not need to import the [primary key](https://www.w3schools.com/sql/sql_primarykey.asp) of `tissue_id`. Upon import, you need to ignore the `tissue_id` field that exists in the insert template by navigating to `1. tissue_id >> Ignore Field`
 
       - ![sequelpro import temp_tissues_insert csv mapping example part 2](images/import_tissues_file_csv_mapping_p2.png)
 
 
-  - Again, because you do not want to set the [foreign key](https://en.wikipedia.org/wiki/Foreign_key) of `spec_id` to be set to `NULL`, you need to ignore the `spec_id` field that exists in the insert template by navigating to `2. spec_id >> Ignore Field`
+  - Again, because this is a temporary table you do not need to import the [foreign key](https://www.w3schools.com/sql/sql_foreignkey.asp) of `spec_id`. Upon import, you need to ignore the `spec_id` field that exists in the insert template by navigating to `2. spec_id >> Ignore Field`
 
       - ![sequelpro import temp_tissues_insert csv mapping example part 3](images/import_tissues_file_csv_mapping_p3.png)
 
 
-  - Again, because you do not want to set the [foreign key](https://en.wikipedia.org/wiki/Foreign_key) of `spec_id` to be set to `NULL`, you need to ignore the `collection_id` field that exists in the insert template by navigating to `5. collection_id >> Ignore Field`
+  - Again, because this is a temporary table you do not need to import the [foreign key](https://www.w3schools.com/sql/sql_foreignkey.asp) of `collection_id`. Upon import, you need to ignore the `collection_id` field that exists in the insert template by navigating to `5. collection_id >> Ignore Field`
 
       - ![sequelpro import temp_tissues_insert csv mapping example part 4](images/import_tissues_file_csv_mapping_p4.png)
 
@@ -307,7 +308,7 @@ And that is it! You are now completely set up with [Sequelpro](https://sequelpro
 
     - ![sequelpro post update temp_tissues_insert table](images/post_update_temp_tissues_insert_table.png)
 
-### Insert Updated Data in the `temp_tissues_insert` table into the   `tissues` table
+### Insert Updated Data in the `temp_tissues_insert` table into the `tissues` table
 
   - **Next, copy the following query into the textbox that appears when you click `Query` in the top navigation bar of the application window AFTER you delete the contents of the textbox.**
 
@@ -320,6 +321,7 @@ And that is it! You are now completely set up with [Sequelpro](https://sequelpro
 
 
   - Click the down-arrow next to `"Run Selection"`, which is immediately below the textbox area, to the right, and click `"Run All Queries"`.
+
     -  ![sequelpro run all queries example](images/sequelpro_run_temp_tissues_insert_to_tissues_table_example.png)
 
 
@@ -340,3 +342,71 @@ And that is it! You are now completely set up with [Sequelpro](https://sequelpro
   - Validate that all of data was deleted from the `temp_tissues_insert` table correctly.
 
       - ![sequelpro post truncate of correctly updated temp_tissues_insert table data ](images/truncate_temp_tissues_insert_table.png)
+
+### Insert data into the `splate` table
+
+
+  - First, open [sequelpro](https://sequelpro.com).
+
+  - Next, locate the `.csv` file that you would like to upload to your database.
+
+  - Once you have your **splate** file, in the top left-hand corner of the screen, navigate to `File >> "Import"...`
+
+      - ![sequelpro import csv example](images/import_csv_top_menu.png)
+
+
+  - Now, select the correct table from the top drop-down menu
+
+      - ![sequelpro import splate csv mapping example](images/import_splate_file_csv_mapping_p1.png)
+
+
+  - Now, because you do not want to set the [primary key](https://www.w3schools.com/sql/sql_primarykey.asp) of `splate_id` to be set to `NULL`, upon import, you need to ignore the `splate_id` field that exists in the insert template by navigating to `1. splate_id >> Ignore Field`
+
+      - ![sequelpro import splate csv mapping example part 2](images/import_splate_file_csv_mapping_p2.png)
+
+
+  - **The value for the `shp_date` of a splate will automatically default to `0000-00-00 00:00:00` if your insert template file `splate_insert_template_p1.csv` (i.e. your csv file with the splate data) does not contain a value for `shp_date` in the form of `yyyy-mm-dd hh:mm:ss` (e.g. `2010-01-03 04:30:43`). If you would like the `shp_date` to default to [`CURRENT_TIMESTAMP`](https://dev.mysql.com/doc/refman/5.7/en/timestamp-initialization.html), then you need to also ignore the `shp_date`field/column that exists in the insert template by navigating to `2. shp_date  >> Ignore Field`.**
+      - ![sequelpro import splate csv mapping example part 3](images/import_splate_file_csv_mapping_p3.png)
+
+
+  - Now, you can see that we will only be importing the fields/columns shown below in lines `2` and `3` from the CSV file into the `splate` table.  **NOTE: if you were to ignore the `shp_date` column as discussed above, the CSV Import Field Mapping window may look a little different from what you see below.**
+      - ![sequelpro import splate csv mapping example part 4](images/import_splate_file_csv_mapping_p4.png)
+
+
+  - Click `"Import"` and Volila! You now have all your (new) data in the `splate` table!
+
+  - Validate that all of data was imported correctly.
+
+      - ![sequelpro post insert splate table data into tissues table](images/post_insert_splate_table.png)
+
+
+### Insert data into the `extraction_plate` table
+
+
+  - First, open [sequelpro](https://sequelpro.com).
+
+  - Next, locate the `.csv` file that you would like to upload to your database.
+
+  - Once you have your **extraction_plate** file, in the top left-hand corner of the screen, navigate to `File >> "Import"...`
+
+      - ![sequelpro import csv example](images/import_csv_top_menu.png)
+
+
+  - Now, select the correct table from the top drop-down menu
+
+      - ![sequelpro import splate csv mapping example](images/import_extraction_plate_file_csv_mapping_p1.png)
+
+
+  - Now, because you do not want to set the [primary key](https://www.w3schools.com/sql/sql_primarykey.asp) of `ext_plt_id` to be set to `NULL`, upon import, you need to ignore the `ext_plt_id` field that exists in the insert template by navigating to `1. ext_plt_id >> Ignore Field`
+
+      - ![sequelpro import splate csv mapping example part 2](images/import_extraction_plate_file_csv_mapping_p2.png)
+
+
+  - Now, you can see that we will only be importing the field/column shown below in line `2` from the CSV file into the `extraction_plate` table.  
+
+      - ![sequelpro import extraction_plate csv mapping example part 3](images/import_extraction_plate_file_csv_mapping_p3.png)
+
+
+  - Validate that all of data was imported correctly.
+
+      - ![sequelpro post insert splate table data into tissues table](images/post_insert_extraction_plate_table.png)
