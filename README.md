@@ -162,7 +162,7 @@ And that is it! You are now completely set up with [Sequelpro](https://sequelpro
       - ![sequelpro run all queries example](images/sequelpro_run_update_temp_gallery_insert_table_example.png)
 
 
-  - Copy the following query into the textbox that appears when you click `Query` in the top navigation bar of the application window AFTER you delete the contents of the textbox.
+  - **Copy the following query into the textbox that appears when you click `Query` in the top navigation bar of the application window AFTER you delete the contents of the textbox.**
 
     ```sql
       UPDATE temp_gallery_insert temp
@@ -181,7 +181,7 @@ And that is it! You are now completely set up with [Sequelpro](https://sequelpro
 
 ### Insert Updated Data in the `temp_gallery_insert` table to the  `gallery` table
 
-  - Next, copy the following query into the textbox that appears when you click `Query` in the top navigation bar of the application window AFTER you delete the contents of the textbox.
+  - **Next, copy the following query into the textbox that appears when you click `Query` in the top navigation bar of the application window AFTER you delete the contents of the textbox.**
   ```sql
     INSERT INTO gallery (`spec_id`,`catalog_nums`, `observations`, `photo_path`, `num_fish`, `photo_dir`)
       SELECT `spec_id`,`catalog_nums`, `observations`, `photo_path`, `num_fish`, `photo_dir`
@@ -191,6 +191,7 @@ And that is it! You are now completely set up with [Sequelpro](https://sequelpro
 
 
   - Click the down-arrow next to `"Run Selection"`, which is immediately below the textbox area, to the right, and click `"Run All Queries"`.
+      - ![sequelpro run all queries example](images/sequelpro_run_temp_gallery_insert_to_gallery_table_example.png)
 
   - Volila! You now have all your (new) data in the `gallery` table!
 
@@ -209,6 +210,30 @@ And that is it! You are now completely set up with [Sequelpro](https://sequelpro
   - Validate that all of data was deleted from the `temp_gallery_insert` table  correctly.
 
       - ![sequelpro post truncate of correctly updated temp_gallery_insert table data ](images/truncate_temp_gallery_insert_table.png)
+
+### Update unpopulated `gallery_id` data in the `species` table
+
+  - **Copy the following query into the textbox that appears when you click `Query` in the top navigation bar of the application window AFTER you delete the contents of the textbox.**
+    ```sql
+      UPDATE species s
+       INNER JOIN gallery g
+        ON s.`spec_id` = g.`spec_id`
+       SET s.`gallery_id` = g.`gallery_id`;
+    ```
+
+      - For more info on what this query is doing, look at [this page](http://stackoverflow.com/questions/11709043/mysql-update-column-with-value-from-another-table)
+
+
+  - Click the down-arrow next to `"Run Selection"`, which is immediately below the textbox area, to the right, and click `"Run All Queries"`.
+      - ![sequelpro run all queries example](images/sequelpro_run_update_gallery_info_in_species_table_example.png)
+
+
+  - Volila! You now have all your (new) data in the `gallery` table!
+
+  - Validate that all of data was inserted into the `species` from the `gallery` table correctly.
+
+    - ![sequelpro post insert of correctly updated gallery table data into species table](images/post_update_species_table.png)
+
 
 ### Insert data into the temp_tissues_insert table
 
@@ -262,7 +287,7 @@ And that is it! You are now completely set up with [Sequelpro](https://sequelpro
     - ![sequelpro run all queries example](images/sequelpro_run_update_temp_tissues_insert_table_example.png)
 
 
-- Copy the following query into the textbox that appears when you click `Query` in the top navigation bar of the application window AFTER you delete the contents of the textbox.
+- **Copy the following query into the textbox that appears when you click `Query` in the top navigation bar of the application window AFTER you delete the contents of the textbox.**
 
   ```sql
   UPDATE temp_tissues_insert t
@@ -284,7 +309,7 @@ And that is it! You are now completely set up with [Sequelpro](https://sequelpro
 
 ### Insert Updated Data in the `temp_tissues_insert` table into the   `tissues` table
 
-  - Next, copy the following query into the textbox that appears when you click `Query` in the top navigation bar of the application window AFTER you delete the contents of the textbox.
+  - **Next, copy the following query into the textbox that appears when you click `Query` in the top navigation bar of the application window AFTER you delete the contents of the textbox.**
 
     ```sql
     INSERT INTO tissues (`spec_id`,`tissue_label`,`catalog_num`, `collection_id`, `box_num`, `is_exhausted`)
