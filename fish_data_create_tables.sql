@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `tissues` (
   `tissue_label` varchar(200) DEFAULT NULL,
   `catalog_num` varchar(128) DEFAULT NULL,
   `collection_id` int(11) unsigned DEFAULT NULL,
-  `box_num` int(11) DEFAULT NULL,
+  `box_num` varchar(128) DEFAULT NULL,
   `is_exhausted` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`tissue_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
